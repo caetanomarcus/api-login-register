@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
+import 'dotenv/config'
 
-mongoose.connect('mongodb+srv://caetanomarcusf:v75704593@marks.8k3n8.mongodb.net/mark-db');
+mongoose.connect(process.env.URL_DATABASE);
 
 let db = mongoose.connection;
 
