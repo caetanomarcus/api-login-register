@@ -15,7 +15,6 @@ const routes = (app) => {
         cors(),
         express.json(),
         register,
-        accounts,
         roles,
         auth
 
